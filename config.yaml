@@ -1,0 +1,76 @@
+# Database Configuration
+db:
+  host: localhost
+  port: 5432
+  username: db_user
+  # password will be provided via a more secure method
+
+# API Configuration
+api:
+  key: your_api_key_here
+  timeout: 10
+  retry:
+    max_attempts: 3
+    delay: 1.5
+
+# Application Settings
+app:
+  name: "My Awesome App"
+  version: 1.0.0
+  debug: false
+  features:
+    - user_management
+    - reporting
+    - analytics
+
+# Logging Configuration
+logging:
+  level: INFO
+  file: /var/log/myapp.log
+  max_size: 10485760  # 10 MB
+  backups: 5
+
+# Cache Settings
+cache:
+  enabled: true
+  ttl: 3600  # Time to live in seconds
+  backend: redis
+
+# Redis Configuration
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+
+# Email Settings
+email:
+  smtp:
+    server: smtp.example.com
+    port: 587
+    use_tls: true
+  sender: noreply@example.com
+  admin_email: admin@example.com
+
+# Internationalization
+i18n:
+  default_language: en
+  supported_languages:
+    - en
+    - es
+    - fr
+    - de
+
+# Performance Tuning
+performance:
+  worker_processes: 4
+  thread_pool: 10
+  batch_size: 1000
+
+# External Services
+services:
+  weather_api:
+    url: https://api.weatherservice.com/v1
+    update_interval: 1800  # in seconds
+  geocoding:
+    provider: google
+    api_key: your_geocoding_api_key_here

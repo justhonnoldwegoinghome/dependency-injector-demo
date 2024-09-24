@@ -1,0 +1,1 @@
+The container contains the 1) config object and 2) instructions on how to create dependencies (singleton vs factory pattern). Wiring is the process of injecting dependencies from the container to functions that require them. The library provides a decorator (`@inject`) to simplify wiring but it is optional.
